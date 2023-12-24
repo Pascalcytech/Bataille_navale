@@ -1,0 +1,125 @@
+\hypertarget{generation_8h}{}\doxysection{generation.\+h File Reference}
+\label{generation_8h}\index{generation.h@{generation.h}}
+
+
+Header file for functions related to game board generation.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for generation.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structBoat}{Boat}}
+\begin{DoxyCompactList}\small\item\em Structure representing a boat in the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structBoard}{Board}}
+\begin{DoxyCompactList}\small\item\em Structure representing the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}} \{ \mbox{\hyperlink{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a9ac7d5e5851d7a2bc186a1c3341589f6}{WATER}} = 0
+, \mbox{\hyperlink{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a5fcfdc36f4798fb6ace9348a10f1e1b3}{BOAT}}
+, \mbox{\hyperlink{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae8af2ae3ffe833ed5371a22f29a0646b}{WATER\+\_\+\+SHOT}}
+, \mbox{\hyperlink{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a6589b5d605e0a15fa3323937132bfa61}{WRECK}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the possible states of a cell on the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structBoard}{Board}} \mbox{\hyperlink{generation_8h_af6f9369191bac625ef23a21596ebd29b}{generate\+\_\+\+Board}} (int size, int $\ast$tab\+\_\+boat\+\_\+size, int $\ast$tab\+\_\+boats, int g\+\_\+nb\+\_\+size\+\_\+boat, int \+\_\+total\+\_\+nb\+\_\+boat)
+\begin{DoxyCompactList}\small\item\em Generates a game board with boats placed randomly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{generation_8h_a35c40807f60495ff605117e53984bdb9}{ajouter\+\_\+bateau}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$new\+Board, int posx, int posy, int a\+\_\+size\+\_\+boat, int a\+\_\+orientation)
+\begin{DoxyCompactList}\small\item\em Adds a boat to the game board at the specified position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for functions related to game board generation. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}\label{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}} 
+\index{generation.h@{generation.h}!State@{State}}
+\index{State@{State}!generation.h@{generation.h}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}}
+
+
+
+Enumeration representing the possible states of a cell on the game board. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WATER@{WATER}!generation.h@{generation.h}}\index{generation.h@{generation.h}!WATER@{WATER}}}\mbox{\Hypertarget{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a9ac7d5e5851d7a2bc186a1c3341589f6}\label{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a9ac7d5e5851d7a2bc186a1c3341589f6}} 
+WATER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOAT@{BOAT}!generation.h@{generation.h}}\index{generation.h@{generation.h}!BOAT@{BOAT}}}\mbox{\Hypertarget{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a5fcfdc36f4798fb6ace9348a10f1e1b3}\label{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a5fcfdc36f4798fb6ace9348a10f1e1b3}} 
+BOAT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WATER\_SHOT@{WATER\_SHOT}!generation.h@{generation.h}}\index{generation.h@{generation.h}!WATER\_SHOT@{WATER\_SHOT}}}\mbox{\Hypertarget{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae8af2ae3ffe833ed5371a22f29a0646b}\label{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae8af2ae3ffe833ed5371a22f29a0646b}} 
+WATER\+\_\+\+SHOT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRECK@{WRECK}!generation.h@{generation.h}}\index{generation.h@{generation.h}!WRECK@{WRECK}}}\mbox{\Hypertarget{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a6589b5d605e0a15fa3323937132bfa61}\label{generation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a6589b5d605e0a15fa3323937132bfa61}} 
+WRECK&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{generation_8h_a35c40807f60495ff605117e53984bdb9}\label{generation_8h_a35c40807f60495ff605117e53984bdb9}} 
+\index{generation.h@{generation.h}!ajouter\_bateau@{ajouter\_bateau}}
+\index{ajouter\_bateau@{ajouter\_bateau}!generation.h@{generation.h}}
+\doxysubsubsection{\texorpdfstring{ajouter\_bateau()}{ajouter\_bateau()}}
+{\footnotesize\ttfamily void ajouter\+\_\+bateau (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{new\+Board,  }\item[{int}]{posx,  }\item[{int}]{posy,  }\item[{int}]{a\+\_\+size\+\_\+boat,  }\item[{int}]{a\+\_\+orientation }\end{DoxyParamCaption})}
+
+
+
+Adds a boat to the game board at the specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Board} & Pointer to the \mbox{\hyperlink{structBoard}{Board}} structure. \\
+\hline
+{\em posx} & X-\/coordinate of the boat\textquotesingle{}s starting position. \\
+\hline
+{\em posy} & Y-\/coordinate of the boat\textquotesingle{}s starting position. \\
+\hline
+{\em a\+\_\+size\+\_\+boat} & Size of the boat. \\
+\hline
+{\em a\+\_\+orientation} & Orientation of the boat (0 for horizontal, 1 for vertical). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{generation_8h_af6f9369191bac625ef23a21596ebd29b}\label{generation_8h_af6f9369191bac625ef23a21596ebd29b}} 
+\index{generation.h@{generation.h}!generate\_Board@{generate\_Board}}
+\index{generate\_Board@{generate\_Board}!generation.h@{generation.h}}
+\doxysubsubsection{\texorpdfstring{generate\_Board()}{generate\_Board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoard}{Board}} generate\+\_\+\+Board (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int $\ast$}]{tab\+\_\+boat\+\_\+size,  }\item[{int $\ast$}]{tab\+\_\+boats,  }\item[{int}]{g\+\_\+nb\+\_\+size\+\_\+boat,  }\item[{int}]{\+\_\+total\+\_\+nb\+\_\+boat }\end{DoxyParamCaption})}
+
+
+
+Generates a game board with boats placed randomly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the game board. \\
+\hline
+{\em tab\+\_\+boat\+\_\+size} & Array of boat sizes. \\
+\hline
+{\em tab\+\_\+boats} & Array of the corresponding number of boats for each size. \\
+\hline
+{\em g\+\_\+nb\+\_\+size\+\_\+boat} & Number of different boat sizes. \\
+\hline
+{\em total\+\_\+nb\+\_\+boat} & Total number of boats on the board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The generated \mbox{\hyperlink{structBoard}{Board}} structure. 
+\end{DoxyReturn}

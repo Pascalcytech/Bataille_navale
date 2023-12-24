@@ -1,0 +1,89 @@
+\hypertarget{shots_8c}{}\doxysection{shots.\+c File Reference}
+\label{shots_8c}\index{shots.c@{shots.c}}
+{\ttfamily \#include \char`\"{}shots.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}generation.\+h\char`\"{}}\newline
+Include dependency graph for shots.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{shots_8c_a35c1af9e9407760e40f237a48f5cc2dc}{is\+\_\+water\+\_\+shot}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$new\+Board, int x\+\_\+to\+\_\+compare, int y\+\_\+to\+\_\+compare)
+\begin{DoxyCompactList}\small\item\em Checks if a water shot has been fired at the given coordinates on the board. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shots_8c_aabc8e2f278c7c71ffe647190bbb8ba88}{is\+\_\+wreck\+\_\+shot}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$new\+Board, int x\+\_\+to\+\_\+compare, int y\+\_\+to\+\_\+compare)
+\begin{DoxyCompactList}\small\item\em Checks if a wreck shot has been fired at the given coordinates on the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shots_8c_a7e221e432b61c5140c8e4d6a0217755b}{boat\+\_\+or\+\_\+water\+\_\+shot}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$my\+Board, \mbox{\hyperlink{structBoard}{Board}} $\ast$opponent\+Board, int x\+\_\+to\+\_\+compare, int y\+\_\+to\+\_\+compare)
+\begin{DoxyCompactList}\small\item\em Check if hit or not at the given coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{shots_8c_a7e221e432b61c5140c8e4d6a0217755b}\label{shots_8c_a7e221e432b61c5140c8e4d6a0217755b}} 
+\index{shots.c@{shots.c}!boat\_or\_water\_shot@{boat\_or\_water\_shot}}
+\index{boat\_or\_water\_shot@{boat\_or\_water\_shot}!shots.c@{shots.c}}
+\doxysubsubsection{\texorpdfstring{boat\_or\_water\_shot()}{boat\_or\_water\_shot()}}
+{\footnotesize\ttfamily void boat\+\_\+or\+\_\+water\+\_\+shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{my\+Board,  }\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{opponent\+Board,  }\item[{int}]{x\+\_\+to\+\_\+compare,  }\item[{int}]{y\+\_\+to\+\_\+compare }\end{DoxyParamCaption})}
+
+
+
+Check if hit or not at the given coordinates. 
+
+Handles a shot on the game board, marking it as a hit or a miss.
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the shooting player\textquotesingle{}s board. \\
+\hline
+{\em opponent\+Board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the opponent\textquotesingle{}s board. \\
+\hline
+{\em x\+\_\+to\+\_\+compare} & The x-\/coordinate of the shot. \\
+\hline
+{\em y\+\_\+to\+\_\+compare} & The y-\/coordinate of the shot. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{shots_8c_a35c1af9e9407760e40f237a48f5cc2dc}\label{shots_8c_a35c1af9e9407760e40f237a48f5cc2dc}} 
+\index{shots.c@{shots.c}!is\_water\_shot@{is\_water\_shot}}
+\index{is\_water\_shot@{is\_water\_shot}!shots.c@{shots.c}}
+\doxysubsubsection{\texorpdfstring{is\_water\_shot()}{is\_water\_shot()}}
+{\footnotesize\ttfamily int is\+\_\+water\+\_\+shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{new\+Board,  }\item[{int}]{x\+\_\+to\+\_\+compare,  }\item[{int}]{y\+\_\+to\+\_\+compare }\end{DoxyParamCaption})}
+
+
+
+Checks if a water shot has been fired at the given coordinates on the board. 
+
+Checks if a water shot has been fired at the specified coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em x\+\_\+to\+\_\+compare} & The x-\/coordinate to check. \\
+\hline
+{\em y\+\_\+to\+\_\+compare} & The y-\/coordinate to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a water shot has been fired at the coordinates, 1 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shots_8c_aabc8e2f278c7c71ffe647190bbb8ba88}\label{shots_8c_aabc8e2f278c7c71ffe647190bbb8ba88}} 
+\index{shots.c@{shots.c}!is\_wreck\_shot@{is\_wreck\_shot}}
+\index{is\_wreck\_shot@{is\_wreck\_shot}!shots.c@{shots.c}}
+\doxysubsubsection{\texorpdfstring{is\_wreck\_shot()}{is\_wreck\_shot()}}
+{\footnotesize\ttfamily int is\+\_\+wreck\+\_\+shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{new\+Board,  }\item[{int}]{x\+\_\+to\+\_\+compare,  }\item[{int}]{y\+\_\+to\+\_\+compare }\end{DoxyParamCaption})}
+
+
+
+Checks if a wreck shot has been fired at the given coordinates on the board. 
+
+Checks if a wreck shot has been fired at the specified coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em x\+\_\+to\+\_\+compare} & The x-\/coordinate to check. \\
+\hline
+{\em y\+\_\+to\+\_\+compare} & The y-\/coordinate to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a wreck shot has been fired at the coordinates, 1 otherwise. 
+\end{DoxyReturn}

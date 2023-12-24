@@ -1,0 +1,64 @@
+\hypertarget{generation_8c}{}\doxysection{generation.\+c File Reference}
+\label{generation_8c}\index{generation.c@{generation.c}}
+{\ttfamily \#include \char`\"{}generation.\+h\char`\"{}}\newline
+Include dependency graph for generation.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structBoard}{Board}} \mbox{\hyperlink{generation_8c_af6f9369191bac625ef23a21596ebd29b}{generate\+\_\+\+Board}} (int size, int $\ast$tab\+\_\+boat\+\_\+size, int $\ast$tab\+\_\+boats, int g\+\_\+nb\+\_\+size\+\_\+boat, int \+\_\+total\+\_\+nb\+\_\+boat)
+\begin{DoxyCompactList}\small\item\em Generates a game board with boats placed randomly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{generation_8c_a35c40807f60495ff605117e53984bdb9}{ajouter\+\_\+bateau}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$new\+Board, int posx, int posy, int a\+\_\+size\+\_\+boat, int a\+\_\+orientation)
+\begin{DoxyCompactList}\small\item\em Adds a boat to the game board at the specified position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{generation_8c_a35c40807f60495ff605117e53984bdb9}\label{generation_8c_a35c40807f60495ff605117e53984bdb9}} 
+\index{generation.c@{generation.c}!ajouter\_bateau@{ajouter\_bateau}}
+\index{ajouter\_bateau@{ajouter\_bateau}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{ajouter\_bateau()}{ajouter\_bateau()}}
+{\footnotesize\ttfamily void ajouter\+\_\+bateau (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{new\+Board,  }\item[{int}]{posx,  }\item[{int}]{posy,  }\item[{int}]{a\+\_\+size\+\_\+boat,  }\item[{int}]{a\+\_\+orientation }\end{DoxyParamCaption})}
+
+
+
+Adds a boat to the game board at the specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Board} & Pointer to the \mbox{\hyperlink{structBoard}{Board}} structure. \\
+\hline
+{\em posx} & X-\/coordinate of the boat\textquotesingle{}s starting position. \\
+\hline
+{\em posy} & Y-\/coordinate of the boat\textquotesingle{}s starting position. \\
+\hline
+{\em a\+\_\+size\+\_\+boat} & Size of the boat. \\
+\hline
+{\em a\+\_\+orientation} & Orientation of the boat (0 for horizontal, 1 for vertical). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{generation_8c_af6f9369191bac625ef23a21596ebd29b}\label{generation_8c_af6f9369191bac625ef23a21596ebd29b}} 
+\index{generation.c@{generation.c}!generate\_Board@{generate\_Board}}
+\index{generate\_Board@{generate\_Board}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{generate\_Board()}{generate\_Board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoard}{Board}} generate\+\_\+\+Board (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int $\ast$}]{tab\+\_\+boat\+\_\+size,  }\item[{int $\ast$}]{tab\+\_\+boats,  }\item[{int}]{g\+\_\+nb\+\_\+size\+\_\+boat,  }\item[{int}]{\+\_\+total\+\_\+nb\+\_\+boat }\end{DoxyParamCaption})}
+
+
+
+Generates a game board with boats placed randomly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the game board. \\
+\hline
+{\em tab\+\_\+boat\+\_\+size} & Array of boat sizes. \\
+\hline
+{\em tab\+\_\+boats} & Array of the corresponding number of boats for each size. \\
+\hline
+{\em g\+\_\+nb\+\_\+size\+\_\+boat} & Number of different boat sizes. \\
+\hline
+{\em total\+\_\+nb\+\_\+boat} & Total number of boats on the board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The generated \mbox{\hyperlink{structBoard}{Board}} structure. 
+\end{DoxyReturn}

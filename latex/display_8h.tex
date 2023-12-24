@@ -1,0 +1,57 @@
+\hypertarget{display_8h}{}\doxysection{display.\+h File Reference}
+\label{display_8h}\index{display.h@{display.h}}
+
+
+Header file for functions related to displaying the game board.  
+
+
+{\ttfamily \#include \char`\"{}generation.\+h\char`\"{}}\newline
+Include dependency graph for display.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{display_8h_a22cbc5d447a204cea3638088428563a5}{display\+Board}} (\mbox{\hyperlink{structBoard}{Board}} board, int mode, \mbox{\hyperlink{structBoard}{Board}} second\+\_\+board)
+\begin{DoxyCompactList}\small\item\em Displays the game board based on the specified mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for functions related to displaying the game board. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{display_8h_a22cbc5d447a204cea3638088428563a5}\label{display_8h_a22cbc5d447a204cea3638088428563a5}} 
+\index{display.h@{display.h}!displayBoard@{displayBoard}}
+\index{displayBoard@{displayBoard}!display.h@{display.h}}
+\doxysubsubsection{\texorpdfstring{displayBoard()}{displayBoard()}}
+{\footnotesize\ttfamily void display\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}}}]{board,  }\item[{int}]{mode,  }\item[{\mbox{\hyperlink{structBoard}{Board}}}]{second\+\_\+board }\end{DoxyParamCaption})}
+
+
+
+Displays the game board based on the specified mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & The \mbox{\hyperlink{structBoard}{Board}} structure to be displayed. \\
+\hline
+{\em mode} & The mode indicating how the board should be displayed. \\
+\hline
+{\em second\+\_\+board} & The second \mbox{\hyperlink{structBoard}{Board}} structure used in specific display modes.\\
+\hline
+\end{DoxyParams}
+The function displays the game board based on the specified mode. The mode determines whether to display the initial boards, shooting mode, or getting shot mode.
+
+Displays the game board based on the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & The game board to be displayed. \\
+\hline
+{\em mode} & Display mode\+: 0 for initial boards, 1 for shooting mode (player\textquotesingle{}s board), 2 for getting shot mode (computer\textquotesingle{}s board). \\
+\hline
+{\em second\+\_\+board} & The second board (relevant for mode 2). \\
+\hline
+\end{DoxyParams}

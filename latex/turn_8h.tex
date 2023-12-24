@@ -1,0 +1,77 @@
+\hypertarget{turn_8h}{}\doxysection{turn.\+h File Reference}
+\label{turn_8h}\index{turn.h@{turn.h}}
+
+
+Header file for functions related to player and computer turns in the game.  
+
+
+{\ttfamily \#include \char`\"{}generation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shots.\+h\char`\"{}}\newline
+Include dependency graph for turn.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{turn_8h_ace280c0ce7bca40ccd9b959add3e1a4a}{player\+\_\+turn}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$p\+\_\+tab\+\_\+\+Board)
+\begin{DoxyCompactList}\small\item\em Executes a turn for the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{turn_8h_aacc29f0ac2199ac23c1c3fe9a9c8a287}{computer\+\_\+turn}} (\mbox{\hyperlink{structBoard}{Board}} $\ast$p\+\_\+tab\+\_\+\+Board)
+\begin{DoxyCompactList}\small\item\em Executes a turn for the computer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for functions related to player and computer turns in the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{turn_8h_aacc29f0ac2199ac23c1c3fe9a9c8a287}\label{turn_8h_aacc29f0ac2199ac23c1c3fe9a9c8a287}} 
+\index{turn.h@{turn.h}!computer\_turn@{computer\_turn}}
+\index{computer\_turn@{computer\_turn}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{computer\_turn()}{computer\_turn()}}
+{\footnotesize\ttfamily void computer\+\_\+turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{p\+\_\+tab\+\_\+\+Board }\end{DoxyParamCaption})}
+
+
+
+Executes a turn for the computer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tab\+\_\+\+Board} & Pointer to the array of \mbox{\hyperlink{structBoard}{Board}} structures.\\
+\hline
+\end{DoxyParams}
+The function executes the computer\textquotesingle{}s turn, determining eligible cells for shooting, choosing a random cell, and handling the shot on the player\textquotesingle{}s board.
+
+Executes a turn for the computer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tab\+\_\+\+Board} & An array of \mbox{\hyperlink{structBoard}{Board}} structures representing the game boards. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_ace280c0ce7bca40ccd9b959add3e1a4a}\label{turn_8h_ace280c0ce7bca40ccd9b959add3e1a4a}} 
+\index{turn.h@{turn.h}!player\_turn@{player\_turn}}
+\index{player\_turn@{player\_turn}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{player\_turn()}{player\_turn()}}
+{\footnotesize\ttfamily void player\+\_\+turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}} $\ast$}]{p\+\_\+tab\+\_\+\+Board }\end{DoxyParamCaption})}
+
+
+
+Executes a turn for the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tab\+\_\+\+Board} & Pointer to the array of \mbox{\hyperlink{structBoard}{Board}} structures.\\
+\hline
+\end{DoxyParams}
+The function executes the player\textquotesingle{}s turn, displaying the board with shots fired by the player and handling the player\textquotesingle{}s shot input.
+
+Executes a turn for the player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tab\+\_\+\+Board} & An array of \mbox{\hyperlink{structBoard}{Board}} structures representing the game boards. \\
+\hline
+\end{DoxyParams}

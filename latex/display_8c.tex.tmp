@@ -1,0 +1,34 @@
+\hypertarget{display_8c}{}\doxysection{display.\+c File Reference}
+\label{display_8c}\index{display.c@{display.c}}
+{\ttfamily \#include \char`\"{}generation.\+h\char`\"{}}\newline
+Include dependency graph for display.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{display_8c_a22cbc5d447a204cea3638088428563a5}{display\+Board}} (\mbox{\hyperlink{structBoard}{Board}} board, int mode, \mbox{\hyperlink{structBoard}{Board}} second\+\_\+board)
+\begin{DoxyCompactList}\small\item\em Display the game board based on the specified mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{display_8c_a22cbc5d447a204cea3638088428563a5}\label{display_8c_a22cbc5d447a204cea3638088428563a5}} 
+\index{display.c@{display.c}!displayBoard@{displayBoard}}
+\index{displayBoard@{displayBoard}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{displayBoard()}{displayBoard()}}
+{\footnotesize\ttfamily void display\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoard}{Board}}}]{board,  }\item[{int}]{mode,  }\item[{\mbox{\hyperlink{structBoard}{Board}}}]{second\+\_\+board }\end{DoxyParamCaption})}
+
+
+
+Display the game board based on the specified mode. 
+
+Displays the game board based on the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & The game board to be displayed. \\
+\hline
+{\em mode} & Display mode\+: 0 for initial boards, 1 for shooting mode (player\textquotesingle{}s board), 2 for getting shot mode (computer\textquotesingle{}s board). \\
+\hline
+{\em second\+\_\+board} & The second board (relevant for mode 2). \\
+\hline
+\end{DoxyParams}
